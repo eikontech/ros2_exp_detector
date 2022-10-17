@@ -1,7 +1,7 @@
 #include "detector_cpp/detector.hpp"
 
 Detector::Detector(const rclcpp::NodeOptions &options)
-    : Node("detector", options)
+    : Node("detector_cpp", options)
 {
     rclcpp::QoS l_detection_image_publisher_qos(10);
     _detectionImagePublisher = image_transport::create_publisher(this, "detection_image", l_detection_image_publisher_qos.get_rmw_qos_profile());
