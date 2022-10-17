@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+                'detector_py_node = detector_py.detector_node:main',
         ],
     },
 )
