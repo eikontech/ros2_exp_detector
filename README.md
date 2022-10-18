@@ -12,6 +12,10 @@ Repository per il detector SPaCe
 - per compilare, digitare:
 
     ```colcon build --cmake-args -DCMAKE_BUILD_TYPE=Debug --event-handlers console_direct+ --executor sequential --symlink-install```
+    
+- prima di eseguire posizionarsi nella folder ros2_exp_detector e  digitare:
+    ```. install/setup.bash```
+    
 - per eseguire:
     - nodo python:
     ```ros2 run detector_py detector_py_node```
